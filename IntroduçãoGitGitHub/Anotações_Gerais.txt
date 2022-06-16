@@ -1,0 +1,70 @@
+Cd - entro na pasta
+
+Exemplo cd Windows
+
+Dir mostra todos os diretórios dentro daquela pasta
+
+Cd .. Retrocessa a pasta
+
+Cls clean screen
+
+Echo - fala
+
+Echo (string) > redireciona o fluxo pra um arquivo
+
+Rmdir apaga repositório
+
+Del apaga arquivo dentro de repositório
+
+A sigla SHA significa Secure Hash Algorithm - esta encriptação gera um conjunto de characteres identificador de 40 dígitos
+
+OBJETOS FUNDAMENTAIS
+
+Blobs
+Trees 
+Commits
+
+
+CHAVES SSH E TOKENS
+
+CHAVE SSH é uma forma de estabelecer uma conexão segura entre duas máquinas
+
+Sequencia de comandos para gerar chave ssh no git bash
+
+	- ssh-keygen -t ed25519 -C pedro-brandao2012@hotmail.com  (enter)
+	
+	Inicializando o agente que lida com as keys
+	
+	- eval  $(ssh-agent -s) (enter)
+
+Git init (inicializa o git no repositório)
+
+Git config --global -> comando para setar uma configuração global no git
+
+ls -a (mostra arquivos ocultos)
+
+Ao usar o git init dentro de um diretório, é criado um repositório
+
+Untracked são os arquivos que não temos ciência
+Tracked são os arquivos que temos ciência
+
+Staged é onde ficam os arquivos que estão se preparando para entrar em outro grupo
+
+Os arquivos do staged, após o estado final vão para o estado de commit, e assim o ciclo se inicia de novo
+
+As mudanças feitas no repositório em máquina não afetam diretamente o diretório em servidor ( a não ser que sejam feitos uma sequência específica de comandos)
+
+Tudo que está no repositório local deve estar commitado
+
+Git status mostra o estado de tudo
+
+Mv (nome do arquivo) ./(pasta)/
+
+RESOLVENDO CONFLITOS 
+
+Conflitos são gerados quando se há alterações de duas pessoas diferentes em uma mesma linha de um arquivo.
+
+Para se resolver, deve se puxar o arquivo do repositório usando o comando git pull origin master
+
+E depois arrumar os conflitos neste arquivo.
+
